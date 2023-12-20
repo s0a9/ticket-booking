@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Image Example</title>
+    <link rel="stylesheet" href="/Styles/output.css" />
+  </head>
+  <body class="min-h-screen bg-my-image bg-cover bg-center">
+    <div class="h-screen container mx-auto flex items-center justify-center">
+      <!-- Parent container with height set to full screen -->
+      <div
+        class="h-5/6 mx-auto text-black container lg:px-4 text-center bg-white bg-opacity-20 justify-center rounded shadow-box22"
+        id="InputBox"
+      >
+        <h2 class="text-3xl mt-4">Book Your Cinema Ticket Here</h2>
+        <div
+          class="flex flex-col md:flex-row mx-auto md:justify-between space-y-3 md:space-y-0 items-start ml-10 md:ml-0 mt-6"
+        >
+          <div>
+            <label for="Movies" class="mr-5 md:mr-0">Select A Movie</label>
+            <select
+              name="Movies"
+              id="Movies"
+              class="p-0.5 rounded text-slate-400"
+            >
+              <option>Modern Times</option>
+              <option>Life Is Beautiful</option>
+              <option>The Immigrant</option>
+              <option>Sunrise</option>
+              <option>The Apartment</option>
+              <option>The Circus</option>
+            </select>
+          </div>
+          <div>
+            <label for="Seats" class="mr-9 md:mr-0">Show Time</label>
+            <input
+              type="time"
+              alt="seats"
+              id="time"
+              placeholder="AM/PM"
+              class="px-1 rounded py-0.5"
+            />
+          </div>
+          <div>
+            <label for="Date" class="mr-11 md:mr-0">Show Date</label>
+            <input
+              type="date"
+              id="date"
+              alt="date"
+              placeholder="Date"
+              class="px-2 rounded"
+            />
+          </div>
+          <div>
+            <label for="Snack" class="mr-2 md:mr-0">Preferred snack</label>
+            <select
+              name="Snack"
+              id="Snack"
+              class="p-0.5 rounded text-slate-400"
+            >
+              <option>Italian Taralli</option>
+              <option>Welch’s Fruit Snacks</option>
+              <option>PopCorners</option>
+              <option>Better Cheddars</option>
+              <option>Junior Mints</option>
+              <option>Shrimp chips</option>
+            </select>
+          </div>
+        </div>
+        <div
+          class="flex flex-row bg-gray-500 mx-auto mt-5 h-10 rounded-full w-2/3 md:w-1/2 p-2 justify-between text-white"
+        >
+          <div class="flex">
+            <div class="bg-gray-700 w-5 h-5 rounded-t-lg mr-1"></div>
+            <p>Available</p>
+          </div>
+          <div class="flex">
+            <div class="bg-green-500 w-5 h-5 rounded-t-lg mr-1"></div>
+            <p>Select</p>
+          </div>
+          <div class="flex">
+            <div class="bg-white w-5 h-5 rounded-t-lg mr-1"></div>
+            <p>Unavailable</p>
+          </div>
+        </div>
+        <div>
+          <div class="screen flex items-center">
+            <p class="text-3xl mx-auto">Cinema</p>
+          </div>
+          <div class="flex justify-center">
+            <div class="container-seat">
+              <div class="flex">
+                <div class="seat md:w-10 md:h-10"></div>
+                <div class="seat md:w-10 md:h-10"></div>
+                <div class="seat md:w-10 md:h-10"></div>
+                <div class="seat md:w-10 md:h-10"></div>
+                <div class="seat occupied md:w-10 md:h-10"></div>
+                <div class="seat occupied md:w-10 md:h-10"></div>
+                <div class="seat occupied md:w-10 md:h-10"></div>
+                <div class="seat md:w-10 md:h-10"></div>
+                <div class="seat md:w-10 md:h-10"></div>
+                <div class="seat md:w-10 md:h-10"></div>
+                <div class="seat md:w-10 md:h-10"></div>
+                <div class="seat md:w-10 md:h-10"></div>
+                <div class="seat md:w-10 md:h-10"></div>
+              </div>
+              <div class="flex">
+                <div class="seat md:w-10 md:h-10"></div>
+                <div class="seat md:w-10 md:h-10"></div>
+                <div class="seat occupied md:w-10 md:h-10"></div>
+                <div class="seat md:w-10 md:h-10"></div>
+                <div class="seat md:w-10 md:h-10"></div>
+                <div class="seat md:w-10 md:h-10"></div>
+                <div class="seat occupied md:w-10 md:h-10"></div>
+                <div class="seat md:w-10 md:h-10"></div>
+                <div class="seat occupied md:w-10 md:h-10"></div>
+                <div class="seat md:w-10 md:h-10"></div>
+                <div class="seat md:w-10 md:h-10"></div>
+                <div class="seat md:w-10 md:h-10"></div>
+                <div class="seat occupied md:w-10 md:h-10"></div>
+              </div>
+              <div class="flex">
+                <div class="seat md:w-10 md:h-10"></div>
+                <div class="seat md:w-10 md:h-10"></div>
+                <div class="seat md:w-10 md:h-10"></div>
+                <div class="seat occupied md:w-10 md:h-10"></div>
+                <div class="seat occupied md:w-10 md:h-10"></div>
+                <div class="seat occupied md:w-10 md:h-10"></div>
+                <div class="seat occupied md:w-10 md:h-10"></div>
+                <div class="seat md:w-10 md:h-10"></div>
+                <div class="seat md:w-10 md:h-10"></div>
+                <div class="seat md:w-10 md:h-10"></div>
+                <div class="seat md:w-10 md:h-10"></div>
+                <div class="seat md:w-10 md:h-10"></div>
+                <div class="seat md:w-10 md:h-10"></div>
+              </div>
+              <div class="flex">
+                <div class="seat md:w-10 md:h-10"></div>
+                <div class="seat md:w-10 md:h-10"></div>
+                <div class="seat md:w-10 md:h-10"></div>
+                <div class="seat md:w-10 md:h-10"></div>
+                <div class="seat md:w-10 md:h-10"></div>
+                <div class="seat md:w-10 md:h-10"></div>
+                <div class="seat md:w-10 md:h-10"></div>
+                <div class="seat md:w-10 md:h-10"></div>
+                <div class="seat md:w-10 md:h-10"></div>
+                <div class="seat occupied md:w-10 md:h-10"></div>
+                <div class="seat occupied md:w-10 md:h-10"></div>
+                <div class="seat occupied md:w-10 md:h-10"></div>
+                <div class="seat occupied md:w-10 md:h-10"></div>
+              </div>
+              <div class="flex">
+                <div class="seat occupied md:w-10 md:h-10"></div>
+                <div class="seat md:w-10 md:h-10"></div>
+                <div class="seat md:w-10 md:h-10"></div>
+                <div class="seat md:w-10 md:h-10"></div>
+                <div class="seat md:w-10 md:h-10"></div>
+                <div class="seat md:w-10 md:h-10"></div>
+                <div class="seat md:w-10 md:h-10"></div>
+                <div class="seat md:w-10 md:h-10"></div>
+                <div class="seat md:w-10 md:h-10"></div>
+                <div class="seat occupied md:w-10 md:h-10"></div>
+                <div class="seat occupied md:w-10 md:h-10"></div>
+                <div class="seat occupied md:w-10 md:h-10"></div>
+                <div class="seat md:w-10 md:h-10"></div>
+              </div>
+              <div class="flex">
+                <div class="seat occupied md:w-10 md:h-10"></div>
+                <div class="seat md:w-10 md:h-10"></div>
+                <div class="seat md:w-10 md:h-10"></div>
+                <div class="seat md:w-10 md:h-10"></div>
+                <div class="seat md:w-10 md:h-10"></div>
+                <div class="seat md:w-10 md:h-10"></div>
+                <div class="seat md:w-10 md:h-10"></div>
+                <div class="seat md:w-10 md:h-10"></div>
+                <div class="seat occupied md:w-10 md:h-10"></div>
+                <div class="seat occupied md:w-10 md:h-10"></div>
+                <div class="seat md:w-10 md:h-10"></div>
+                <div class="seat md:w-10 md:h-10"></div>
+                <div class="seat md:w-10 md:h-10"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-3 justify-center text-2xl text-gray-900">
+          <p class="price">Price Per Seat: <span>00.00</span> USD</p>
+          <p class="Count">Seats Selected: <span>0</span> seat</p>
+          <p class="total">Total Payment: <span>0</span> USD</p>
+        </div>
+        <div class="Submit mx-auto mt-4"></div>
+      </div>
+    </div>
+    <script src="Scripts/index.js"></script>
+  </body>
+</html>
